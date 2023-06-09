@@ -94,7 +94,7 @@ No debes modificar **NINGÚN** archivo dentro de la carpeta **`/server/api`**. C
 
 2. Clona el repositorio en tu computadora para comenzar a trabajar. Este repositorio contiene un **`BoilerPlate`** con la estructura general del proyecto, tanto del servidor como del cliente. El boilerplate cuenta con dos carpetas: **`api`** y **`client`**. En estas carpetas estará el código del back-end y el front-end respectivamente.
 
-3. En la carpeta **`api`** deberás crear un archivo llamado: **`.env`** que tenga la siguiente forma:
+3. En la carpeta **`server`** deberás crear un archivo llamado: **`.env`** que tenga la siguiente forma:
 
    ```env
        DB_USER=usuariodepostgres
