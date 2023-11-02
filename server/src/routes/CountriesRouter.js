@@ -1,19 +1,16 @@
 const { Router } = require("express");
+const { 
+  getCountriesHandler, 
+  getCountryByIdHandler,
+  postCountryHandler
+} = require("../handlers/CountriesHandler");
 
 const countriesRouter = Router();
 
-countriesRouter.get("/", (req, res) => {
-  res.status(200).send("Hello from countries!");
-});
+countriesRouter.get("/", getCountriesHandler);
 
-countriesRouter.get("/:id", (req, res) => {
-  const { id } = req.params;
-  res.status(200).send(`Hello from country ${id}!`);
-});
+countriesRouter.get("/:id", getCountryByIdHandler);
 
-countriesRouter.post("/", (req, res) => {
-  const { body } = req;
-  res.status(200).send(body);
-});
+countriesRouter.post("/", postCountryHandler);
 
 module.exports = countriesRouter;
