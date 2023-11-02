@@ -1,6 +1,12 @@
+const {
+  getAllCountriesController,
+} = require("../controllers/CountriesController");
+
 const getCountriesHandler = async (req, res) => {
   try {
-    res.status(200).send({message: "Hello from getCountriesHandler!"});
+    const allCountries = await getAllCountriesController();
+    res.status(200).send(allCountries);
+
   } catch (error) {
     res.status(400).send({error: error.message});
   }
