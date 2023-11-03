@@ -3,7 +3,7 @@ const {
   getCountriesHandler, 
   getCountryByIdHandler,
   postCountryHandler
-} = require("../handlers/CountriesHandler");
+} = require("../handlers/countriesHandler");
 
 const countriesRouter = Router();
 
