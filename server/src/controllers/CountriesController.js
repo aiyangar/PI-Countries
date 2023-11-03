@@ -12,4 +12,4 @@ const getAllCountriesController = async ()=>{
 
 module.exports = {
   getAllCountriesController
-};
+}; 
